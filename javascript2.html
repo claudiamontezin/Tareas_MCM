@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio2_MCM</title>
+  </head>
+  <body>
+    <script>
+      /*solicita la carga de 10 numeros e imprime la sema de los ultimos cinco*/
+      var total = 0;
+      for (let i = 0; i < 10; i++) {
+        var unNumero = parseInt(prompt(`Ingresa el numero ${i + 1}`));
+        if (i > 4) {
+          total = total + unNumero;
+        }
+      }
+      document.write(
+        `La suma de los últimos cinco numeros ingresados es ${total}`
+      );
+    </script>
+  </body>
+</html>

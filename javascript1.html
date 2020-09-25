@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1_MCM</title>
+</head>
+<body>
+    <script>
+        /*De tres numeros ingresados, te dice si alguno es menoa a 10*/
+        const numeroIngresado=[]
+for (let i = 0; i <3 ; i++) {
+var unNumero=parseInt(prompt(`Ingresa el numero ${i+1}`)) ;  
+numeroIngresado.push(unNumero);
+}
+const min =Math.min(...numeroIngresado);
+min <10
+ ? document.write("Alguno de los números es menor que diez")
+:document.write("Todos los numeros son mayores o iguales a 10");
+    
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio3_MCM</title>
+  </head>
+  <body>
+    <script>
+      /*se cargan 10 valores, te dice cuantos son positivos, cuantos negativos, cuantos multiplos de quince y la suma de todos los numeros que son pares*/
+      const losNumeros = [];
+      positivo = 0;
+      negativo = 0;
+      multQuince = 0;
+      suma = 0;
+      const nrosPositivos = [];
+      for (let i = 0; i < 10; i++) {
+        var unNumero = parseInt(prompt(`Ingresa el numero ${i + 1}`));
+        losNumeros.push(unNumero);
+        if (losNumeros[i] < 0) {
+          negativo++;
+        }
+        if (losNumeros[i] > 0) {
+          positivo++;
+        }
+        if (losNumeros[i]!=0 && losNumeros[i] % 15 == 0) {
+          multQuince++;
+        }
+        if (losNumeros[i] % 2 == 0) {
+          suma = suma + losNumeros[i];
+        }
+      }
+      document.write(
+        `Se han ingresado ${positivo} valores positivos y  ${negativo} valores negativos <br>`
+      );
+      document.write(
+        `Se han ingresado ${multQuince} numeros que son múltiplos de quince <br>`
+      );
+      document.write(
+        `El valor acumulado de los numeros ingresados que son pares es  ${suma} <br>`
+      );
+    </script>
+  </body>
+</html>

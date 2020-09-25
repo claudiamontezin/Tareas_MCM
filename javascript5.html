@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio5_MCM</title>
+  </head>
+  <body>
+    <script>
+      /*Pide la carga de 5 numero enteros y luego nos dice cuantos son pares y cuantos impares*/
+      const losNumeros = [];
+      pares = 0;
+      impares = 0;
+      for (let i = 0; i < 5; i++) {
+        var unNumero = parseInt(prompt(`Ingresa el numero ${i + 1}`));
+        losNumeros.push(unNumero);
+        if (losNumeros[i]!=0) {
+          
+        if (losNumeros[i] % 2 == 0) {
+          pares++;
+        }
+        if (losNumeros[i] % 2 != 0) {
+          impares++;
+        }
+        }
+      }
+      document.write(
+        `Se han ingresado ${pares} valores pares y  ${impares} valores impares <br>`
+      );
+    </script>
+  </body>
+</html>
