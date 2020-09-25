@@ -12,9 +12,9 @@
       pares = 0;
       impares = 0;
       for (let i = 0; i < 5; i++) {
-        var unNumero = parseInt(prompt(`Ingresa el numero ${i + 1}`));
+        var unNumero = Number(prompt(`Ingresa el numero ${i + 1}`));
         losNumeros.push(unNumero);
-        if (losNumeros[i]!=0) {
+        if ( Number.isInteger(losNumeros[i])&& losNumeros[i]!=0 ) {
           
         if (losNumeros[i] % 2 == 0) {
           pares++;
@@ -25,7 +25,7 @@
         }
       }
       document.write(
-        `Se han ingresado ${pares} valores pares y  ${impares} valores impares <br>`
+        `Se han ingresado ${pares} valores enteros pares y  ${impares} valores enteros impares <br>`
       );
     </script>
   </body>
