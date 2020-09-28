@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+
+            <script>
+        // JSON  formato de texto sencillo para el intercambio de datos//
+const alumnaMCM={
+    nombre : "María Claudia",
+    apellido:"Montezin",
+    apodo : "Clody",
+    domicilio: "Cinco Saltos -Rio Negro",
+    casada : "casada",
+    hijos: [
+        {nombre:"Andrea", edad:"26",profesion:"abogada"},
+        {nombre:"Juan Ignacio",edad:"21",profesion:"chef"}
+    ],
+    titulo: "Prof.en Matematica",
+    mascotas:[
+        {nombre:"Nacho San",tipo:"ovejero",estado: false,raza:true},
+        {nombre:"Gaspar Newton Neron",tipo:"golden retriever",estado :false,raza:true},
+        {nombre:"Apolo Polito Pierre",tipo:"dogo argentino",estado:true,raza:true},
+        {nombre: "Tutti le fioqui", tipo:"delmo",estado:true,raza:false},
+        ],
+    deportes: ["tenis","crossfit","correr"],
+}
+document.write(  `<h1>       Me llamo ${alumnaMCM.nombre} , mi mamá me dice ${alumnaMCM.apodo}. </h1>`);
+document.write(`<h2>Vivo en ${alumnaMCM.domicilio}, en la Patagonia</h2> `);
+    
+document.write(` <h2>Nuestro primer perro familiar fué ${alumnaMCM.mascotas[0].nombre} , el perro que tenemos ahora es ${alumnaMCM.mascotas[2].nombre} y su compañera fiel ${alumnaMCM.mascotas[3].nombre}.</h2>`);
+    </script>
+    
+</body>
+<footer>
+    CopyRight by MCM
+    <script>
+      document.write(new Date().getFullYear());
+    </script>
+            </div>        
+  </footer>
+
+</html>
